@@ -1,3 +1,3 @@
 # wordslab
 
-This is the documentation homepage - test 1.
+This is the documentation homepage - test 2.

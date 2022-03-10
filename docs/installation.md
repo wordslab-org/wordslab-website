@@ -22,7 +22,7 @@ wordslab manager will check and install (or guide you to install) all the necess
 
 These prerequisites are documented below for your information: you don't need to install them manually.
 
-!!! Prerequisites to install and run wordslab manager
+!!! info "Prerequisites to install and run wordslab manager"
 
     === "Windows"
 
@@ -34,13 +34,13 @@ These prerequisites are documented below for your information: you don't need to
 
         - Ubuntu version 16.04, 18.04, 20.04+ x64
         - Not tested but should also work: 
-          - Alpine Linux 3.12+ x64
-          - CentOS 7+ x64
-          - Debian 10+ x64
-          - Fedora 33+ x64
-          - openSUSE 15+ x64
-          - Red Hat Enterprise Linux 7+ x64
-          - SUSE Enterprise Linux 12 SP2+ x64
+          * Alpine Linux 3.12+ x64
+          * CentOS 7+ x64
+          * Debian 10+ x64
+          * Fedora 33+ x64
+          * openSUSE 15+ x64
+          * Red Hat Enterprise Linux 7+ x64
+          * SUSE Enterprise Linux 12 SP2+ x64
         - 100 MB of free disk space
 
     === "macOS"
@@ -48,7 +48,7 @@ These prerequisites are documented below for your information: you don't need to
         - macOS	10.15+ x64
         - 100 MB of free disk space
 
-!!! Prerequisites to create a local virtual machine
+!!! info "Prerequisites to create a local virtual machine"
 
     === "Windows"
 
@@ -78,7 +78,7 @@ These prerequisites are documented below for your information: you don't need to
         - Admin privileges are only needed to:
           - install homebrew
 
-!!! Prerequisites to use a GPU in local virtual machine
+!!! info "Prerequisites to use a GPU in local virtual machine"
 
     === "Windows"
 
@@ -89,17 +89,19 @@ These prerequisites are documented below for your information: you don't need to
 
     === "Linux"
 
-        - GPU sharing between host and guest OS **not supported**
+        - GPU sharing between host and guest OS on Linux is **not supported**
 
     === "macOS"
 
-        - GPU sharing between host and guest OS **not supported**
+        - GPU sharing between host and guest OS on macOS is **not supported**
 
 ## Installation instructions
 
-You can find the wordslab releases
+You can find the changelog for all wordslab manager releases in the Github repository: [https://github.com/wordslab-org/wordslab/releases](https://github.com/wordslab-org/wordslab/releases).
 
-!!! Installation commands
+To download and install wordslab manager, open a terminal and copy the installation commands below.
+
+!!! example "Installation commands"
 
     === "Windows"
 
@@ -116,25 +118,25 @@ You can find the wordslab releases
     === "Linux"
 
         ``` bash hl_lines="1"
-        - installdir=$HOME/wordslab
-        - mkdir $installdir
-        - curl -L -o $installdir/wordslab-linux-x64.zip https://github.com/wordslab-org/wordslab/releases/download/v0.0.2/wordslab-linux-x64.zip
-        - tar -x -f $installdir/wordslab-linux-x64.zip -C $installdir
-        - rm $installdir/wordslab-linux-x64.zip
-        - cd $installdir
-        - wordslab version
+        installdir=$HOME/wordslab
+        mkdir $installdir
+        curl -L -o $installdir/wordslab-linux-x64.tar.gz https://github.com/wordslab-org/wordslab/releases/download/v0.0.2/wordslab-linux-x64.tar.gz
+        tar -xf $installdir/wordslab-linux-x64.tar.gz -C $installdir
+        rm $installdir/wordslab-linux-x64.tar.gz
+        cd $installdir
+        wordslab version
         ```
 
     === "macOS"
 
         ``` zsh hl_lines="1"
-        - installdir=$HOME/wordslab
-        - mkdir $installdir
-        - curl -L -o $installdir/wordslab-osx-x64.zip https://github.com/wordslab-org/wordslab/releases/download/v0.0.2/wordslab-osx-x64.zip
-        - tar -x -f $installdir/wordslab-osx-x64.zip -C $installdir
-        - rm $installdir/wordslab-osx-x64.zip
-        - cd $installdir
-        - wordslab version
+        installdir=$HOME/wordslab
+        mkdir $installdir
+        curl -L -o $installdir/wordslab-osx-x64.tar.gz https://github.com/wordslab-org/wordslab/releases/download/v0.0.2/wordslab-osx-x64.tar.gz
+        tar -xf $installdir/wordslab-osx-x64.tar.gz -C $installdir
+        rm $installdir/wordslab-osx-x64.tar.gz
+        cd $installdir
+        wordslab version
         ```
 
 ## First use and initial configuration

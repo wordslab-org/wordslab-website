@@ -6,7 +6,8 @@ You can manage all your wordslab clusters and all your *cloud* virtual machines 
 
 But you also need to install **wordslab manager** on each machine on which you want to create, start and stop a *local* virtual machine.
 
-You can install **wordslab manager** on :
+You can install **wordslab manager** on:
+
 - :fontawesome-brands-windows: Windows 10+
 - :fontawesome-brands-linux: Linux - Ubuntu 18.04+
 - :fontawesome-brands-apple: macOS - Catalina+
@@ -21,7 +22,7 @@ wordslab manager will check and install (or guide you to install) all the necess
 
 These prerequisites are documented below for your information: you don't need to install them manually.
 
-!!! Prerequisites to install and run **wordslab manager**
+!!! Prerequisites to install and run wordslab manager
 
     === "Windows"
 
@@ -47,7 +48,7 @@ These prerequisites are documented below for your information: you don't need to
         - macOS	10.15+ x64
         - 100 MB of free disk space
 
-!!! Prerequisites to create a *local* virtual machine
+!!! Prerequisites to create a local virtual machine
 
     === "Windows"
 
@@ -77,7 +78,7 @@ These prerequisites are documented below for your information: you don't need to
         - Admin privileges are only needed to:
           - install homebrew
 
-!!! Prerequisites to use a GPU in *local* virtual machine
+!!! Prerequisites to use a GPU in local virtual machine
 
     === "Windows"
 
@@ -102,16 +103,19 @@ You can find the wordslab releases
 
     === "Windows"
 
-        - set installdir=%APPDATA%\wordslab
-        - mkdir %installdir%
-        - curl -L -o %installdir%\wordslab-win-x64.zip https://github.com/wordslab-org/wordslab/releases/download/v0.0.2/wordslab-win-x64.zip
-        - tar -x -f %installdir%\wordslab-win-x64.zip -C %installdir%
-        - del %installdir%\wordslab-win-x64.zip
-        - cd %installdir%
-        - wordslab version
+        ``` winbatch hl_lines="1"
+        set installdir=%APPDATA%\wordslab
+        mkdir %installdir%
+        curl -L -o %installdir%\wordslab-win-x64.zip https://github.com/wordslab-org/wordslab/releases/download/v0.0.2/wordslab-win-x64.zip
+        tar -x -f %installdir%\wordslab-win-x64.zip -C %installdir%
+        del %installdir%\wordslab-win-x64.zip
+        cd %installdir%
+        wordslab version
+        ```
 
     === "Linux"
 
+        ``` bash hl_lines="1"
         - installdir=$HOME/wordslab
         - mkdir $installdir
         - curl -L -o $installdir/wordslab-linux-x64.zip https://github.com/wordslab-org/wordslab/releases/download/v0.0.2/wordslab-linux-x64.zip
@@ -119,10 +123,19 @@ You can find the wordslab releases
         - rm $installdir/wordslab-linux-x64.zip
         - cd $installdir
         - wordslab version
+        ```
 
     === "macOS"
 
-        - to do
+        ``` zsh hl_lines="1"
+        - installdir=$HOME/wordslab
+        - mkdir $installdir
+        - curl -L -o $installdir/wordslab-osx-x64.zip https://github.com/wordslab-org/wordslab/releases/download/v0.0.2/wordslab-osx-x64.zip
+        - tar -x -f $installdir/wordslab-osx-x64.zip -C $installdir
+        - rm $installdir/wordslab-osx-x64.zip
+        - cd $installdir
+        - wordslab version
+        ```
 
 ## First use and initial configuration
 

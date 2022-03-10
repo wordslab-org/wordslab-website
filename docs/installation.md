@@ -124,7 +124,7 @@ To download and install wordslab manager, open a terminal and copy the installat
         tar -xf $installdir/wordslab-linux-x64.tar.gz -C $installdir
         rm $installdir/wordslab-linux-x64.tar.gz
         cd $installdir
-        wordslab version
+        ./wordslab version
         ```
 
     === "macOS"
@@ -136,7 +136,7 @@ To download and install wordslab manager, open a terminal and copy the installat
         tar -xf $installdir/wordslab-osx-x64.tar.gz -C $installdir
         rm $installdir/wordslab-osx-x64.tar.gz
         cd $installdir
-        wordslab version
+        ./wordslab version
         ```
 
 ## First use and initial configuration

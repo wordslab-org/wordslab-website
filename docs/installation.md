@@ -1,10 +1,8 @@
 # Installation
 
-## OS support and prerequisites
+You need to install **wordslab manager** on each host machine on which you want to create, start and stop a *local* virtual machine.
 
-You can manage all your wordslab clusters and all your *cloud* virtual machines from a single **wordslab manager** installation.
-
-But you also need to install **wordslab manager** on each machine on which you want to create, start and stop a *local* virtual machine.
+You can manage all your *cloud* virtual machines from a single **wordslab manager** installation.
 
 You can install **wordslab manager** on:
 
@@ -14,39 +12,13 @@ You can install **wordslab manager** on:
 
 You don't need to be an administrator or to have root/sudo privileges to install and use wordslab manager, or even to create a *local* virtual machine.
 
-But you may need admin priviledges to install some prerequisites on the machine (see below). 
+But you may need admin privileges to install some prerequisites on the machine (see below). 
 
 The wordslab manager installation and its data always stays confined to the current user account.
 
-wordslab manager will check and install (or guide you to install) all the necessary prerequisites.
+wordslab manager will check and install for you all the necessary prerequisites.
 
-These prerequisites are documented below for your information: you don't need to install them manually.
-
-!!! info "Prerequisites to install and run wordslab manager"
-
-    === "Windows"
-
-        - Windows 10 version 1703+ x64
-        - Windows 11 version 22000+ x64
-        - 100 MB of free disk space
-
-    === "Linux"
-
-        - Ubuntu version 16.04, 18.04, 20.04+ x64
-        - Not tested but should also work: 
-           * Alpine Linux 3.12+ x64
-           * CentOS 7+ x64
-           * Debian 10+ x64
-           * Fedora 33+ x64
-           * openSUSE 15+ x64
-           * Red Hat Enterprise Linux 7+ x64
-           * SUSE Enterprise Linux 12 SP2+ x64
-        - 100 MB of free disk space
-
-    === "macOS"
-
-        - macOS	10.15+ x64
-        - 100 MB of free disk space
+## OS support and prerequisites
 
 !!! info "Prerequisites to create a local virtual machine"
 
@@ -108,7 +80,7 @@ To download and install wordslab manager, open a terminal and copy the installat
         ``` winbatch hl_lines="1"
         set installdir=%APPDATA%\wordslab
         mkdir %installdir%
-        curl -L -o %installdir%\wordslab-win-x64.zip https://github.com/wordslab-org/wordslab/releases/download/v0.0.4/wordslab-win-x64.zip
+        curl -L -o %installdir%\wordslab-win-x64.zip https://github.com/wordslab-org/wordslab/releases/download/v0.8.0/wordslab-win-x64.zip
         tar -x -f %installdir%\wordslab-win-x64.zip -C %installdir%
         del %installdir%\wordslab-win-x64.zip
         cd %installdir%
@@ -120,7 +92,7 @@ To download and install wordslab manager, open a terminal and copy the installat
         ``` bash hl_lines="1"
         installdir=$HOME/wordslab
         mkdir $installdir
-        curl -L -o $installdir/wordslab-linux-x64.tar.gz https://github.com/wordslab-org/wordslab/releases/download/v0.0.4/wordslab-linux-x64.tar.gz
+        curl -L -o $installdir/wordslab-linux-x64.tar.gz https://github.com/wordslab-org/wordslab/releases/download/v0.8.0/wordslab-linux-x64.tar.gz
         tar -xf $installdir/wordslab-linux-x64.tar.gz -C $installdir
         rm $installdir/wordslab-linux-x64.tar.gz
         cd $installdir
@@ -132,12 +104,11 @@ To download and install wordslab manager, open a terminal and copy the installat
         ``` zsh hl_lines="1"
         installdir=$HOME/wordslab
         mkdir $installdir
-        curl -L -o $installdir/wordslab-osx-x64.tar.gz https://github.com/wordslab-org/wordslab/releases/download/v0.0.4/wordslab-osx-x64.tar.gz
+        curl -L -o $installdir/wordslab-osx-x64.tar.gz https://github.com/wordslab-org/wordslab/releases/download/v0.8.0/wordslab-osx-x64.tar.gz
         tar -xf $installdir/wordslab-osx-x64.tar.gz -C $installdir
         rm $installdir/wordslab-osx-x64.tar.gz
         cd $installdir
         ./wordslab version
         ```
 
-## First use and initial configuration
 

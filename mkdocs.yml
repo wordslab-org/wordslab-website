@@ -11,7 +11,7 @@ repo_url: https://github.com/wordslab-org/wordslab
 edit_uri: ""
 
 # Copyright
-copyright: Copyright &copy; 2022 Laurent Prud'hon
+copyright: Copyright &copy; 2023 Laurent Prud'hon
 
 # Configuration
 theme:
@@ -118,6 +118,8 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home: index.md
   - Getting started:
     - Installation: installation.md
+    - Overview: overview.md
+  - Local virtual machines:
+    - Commands: wordslab-host-commands.md

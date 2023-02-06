@@ -26,8 +26,7 @@ wordslab manager will check and install for you all the necessary prerequisites.
 
         - Windows 10 version 1903+ x64
         - 10 GB of free disk space
-        - Admin privileges are only needed to:
-           * enable Windows Subsystem for Linux
+        - Admin privileges are only needed to enable Windows Subsystem for Linux
 
     === "Linux"
 
@@ -40,15 +39,13 @@ wordslab manager will check and install for you all the necessary prerequisites.
            * RHEL/CentOS: yum install qemu-kvm
            * SUSE: zypper install qemu
         - 10 GB of free disk space
-        - Admin privileges are only needed to:
-           * install cpu-checker qemu qemu-utils qemu-kvm 
+        - Admin privileges are only needed to install cpu-checker qemu qemu-utils qemu-kvm 
 
     === "macOS"
 
         - macOS	10.15+ x64
         - 10 GB of free disk space
-        - Admin privileges are only needed to:
-           * install homebrew
+        - Admin privileges are only needed to install homebrew
 
 !!! info "Prerequisites to use a GPU in local virtual machine"
 

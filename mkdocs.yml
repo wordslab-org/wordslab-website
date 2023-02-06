@@ -119,7 +119,7 @@ markdown_extensions:
 # Page tree
 nav:
   - Getting started:
-    - Installation: installation.md
+    - Installation: index.md
     - Overview: overview.md
   - Local virtual machines:
     - Commands: wordslab-host-commands.md

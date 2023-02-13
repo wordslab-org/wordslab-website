@@ -75,7 +75,7 @@ To download and install wordslab manager, open a terminal and copy the installat
     === "Windows"
 
         ``` winbatch hl_lines="1"
-        set installdir=%APPDATA%\wordslab
+        set installdir=%HOMEPATH%\wordslab
         mkdir %installdir%
         curl -L -o %installdir%\wordslab-win-x64.zip https://github.com/wordslab-org/wordslab/releases/download/v0.8.1/wordslab-win-x64.zip
         tar -x -f %installdir%\wordslab-win-x64.zip -C %installdir%

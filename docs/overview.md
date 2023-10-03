@@ -41,5 +41,24 @@ This command will give you the local virtual machines stored on on your host mac
 
 These commands will start / stop a local virtual machine, but will also set the host machine network so that you can access them (which may require admin privileges if you requested firewall openings for example).
 
+## Download and deploy a Kubernetes app on a running virtual machine
+
+1. Execute **wordslab app download [vm] [url]** where [vm] is the virtual machine name and [url] is a Kubernetes app URL.
+
+Example of Kubernetes app provided by wordslab : https://raw.githubusercontent.com/wordslab-org/wordslab/main/wordslab.manager/apps/notebooks/wordslab-notebooks-gpu-app.yaml
+
+2. Execute **wordslab app list [vm]** to get the ID of the specific version of a Kubernetes application you want to deploy.
+
+Example of Kubernetes app ID : EIwKfHXcw/0VPijBmAXb/kmVvVBQNf/kIvWlClakako=
+
+3. Execute **wordslab app deployment create [vm] [ID]** to deploy the Kubernetes app in a namespace of your choice.
+
+4. Execute **wordslab app deployment list [vm]** to get the local URLs at which you can access the application.
+
+Example of URLs:
+- Jupyterlab: http://127.0.0.1/notebooks/lab
+- Web interface (port 7860): http://127.0.0.1/notebooks/gradio
+- API endpoint (port 8000): http://127.0.0.1/notebooks/fastapi
+
 
 

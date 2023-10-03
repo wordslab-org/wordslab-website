@@ -123,3 +123,5 @@ nav:
     - Overview: overview.md
   - Local virtual machines:
     - Commands: wordslab-host-commands.md
+  - Kubernetes applications:
+    - Commands: wordslab-app-commands.md

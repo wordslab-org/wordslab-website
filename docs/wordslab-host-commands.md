@@ -52,6 +52,3 @@ wordslab **host vm delete** [name] : DANGER - Delete a local wordslab virtual ma
 wordslab **host system info** : Display host machine hardware and operating system information
 
 wordslab **host system status** : Display host machine usage metrics: cpu, memory, storage, network
-
-
-

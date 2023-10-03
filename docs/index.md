@@ -1,6 +1,6 @@
 # Installation
 
-You need to install **wordslab manager** on each host machine on which you want to create, start and stop a *local* virtual machine.
+You need to install **wordslab** on each host machine on which you want to create, start and stop a *local* virtual machine.
 
 You can manage all your *cloud* virtual machines from a single **wordslab manager** installation.
 
@@ -77,7 +77,7 @@ To download and install wordslab manager, open a terminal and copy the installat
         ``` winbatch hl_lines="1"
         set installdir=%HOMEPATH%\wordslab
         mkdir %installdir%
-        curl -L -o %installdir%\wordslab-win-x64.zip https://github.com/wordslab-org/wordslab/releases/download/v0.8.3/wordslab-win-x64.zip
+        curl -L -o %installdir%\wordslab-win-x64.zip https://github.com/wordslab-org/wordslab/releases/download/v0.9.2/wordslab-win-x64.zip
         tar -x -f %installdir%\wordslab-win-x64.zip -C %installdir%
         del %installdir%\wordslab-win-x64.zip
         cd %installdir%
@@ -89,7 +89,7 @@ To download and install wordslab manager, open a terminal and copy the installat
         ``` bash hl_lines="1"
         installdir=$HOME/wordslab
         mkdir $installdir
-        curl -L -o $installdir/wordslab-linux-x64.tar.gz https://github.com/wordslab-org/wordslab/releases/download/v0.8.3/wordslab-linux-x64.tar.gz
+        curl -L -o $installdir/wordslab-linux-x64.tar.gz https://github.com/wordslab-org/wordslab/releases/download/v0.9.2/wordslab-linux-x64.tar.gz
         tar -xf $installdir/wordslab-linux-x64.tar.gz -C $installdir
         rm $installdir/wordslab-linux-x64.tar.gz
         cd $installdir
@@ -101,11 +101,26 @@ To download and install wordslab manager, open a terminal and copy the installat
         ``` zsh hl_lines="1"
         installdir=$HOME/wordslab
         mkdir $installdir
-        curl -L -o $installdir/wordslab-osx-x64.tar.gz https://github.com/wordslab-org/wordslab/releases/download/v0.8.3/wordslab-osx-x64.tar.gz
+        curl -L -o $installdir/wordslab-osx-x64.tar.gz https://github.com/wordslab-org/wordslab/releases/download/v0.9.2/wordslab-osx-x64.tar.gz
         tar -xf $installdir/wordslab-osx-x64.tar.gz -C $installdir
         rm $installdir/wordslab-osx-x64.tar.gz
         cd $installdir
         ./wordslab version
         ```
 
+## Quick start
 
+If your goal is to install the built-in notebooks app, you can execute a single command:
+
+**wordslab install notebooks**
+
+This command will:
+- check and prepare your machine will all the prerequisites
+- create a local virtual machine called "dev" with the recommended configuration
+- download and deploy the "notebooks" app for a GPU environment
+
+The command line will print the URL at which you will be able to access your Jupyterlab environment after a few minutes of patience.
+
+You can then use the following command to monitor, start and stop your virtual machine from a web UI:
+
+**wordslab manager**
